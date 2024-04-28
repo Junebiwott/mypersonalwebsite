@@ -1,0 +1,146 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+img {
+    width: 35%;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border: 5px  double black;
+    border-radius: 50%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+article {
+    background-color: #43f30d;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+section{
+    background-color: aqua;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer ol {
+    list-style: none;
+}
+
+footer ol li {
+    margin-bottom: 10px;
+}
+
+/* Form styles */
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Grid layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1;
+    padding: 0 15px;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    .col {
+        flex: 100%;
+    }
+}
+
+/* Card styles */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
