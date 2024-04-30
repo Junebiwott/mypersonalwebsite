@@ -5,60 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Website</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="s"
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <body class="bg-gray-100 text-gray-800">
         <header class="header bg-blue-500 text-white py-4">
             <h1 class="text-3xl font-bold">June Biwott</h1>
+            <a href="#html">Html</a>
+            <a href="#Modified">Taco shop modified</a>
+            <a href="#Acme Rockets">Acme Rockets</a>
+            <a href="#aboutme">About me</a>
+            <a href="#myhobbies">My hobbies</a>
+            <a href="#contactme">Contact me</a>
+            <a href="#mysocials">My socials</a>
+
         </header>
-        <img src="img/Snapchat-1859076944.jpg" alt="A photo of me" title="June Biwott's photo" class="w-1/2 mx-auto my-8 rounded-full border-4 border-blue-500">
-        <p class="text-lg px-4">Over the past 2 weeks, I have been learning about HTML, CSS, and Tailwind CSS.</p>
-        <article class="html bg-white p-6 my-4">
+        <section class="snap">
+            <figure class="profile-pic-figure">
+        <img src="img/Snapchat-1859076944.jpg" alt="A photo of me" title="June Biwott's photo" class="w-1/2 mx-auto my-8 rounded-full border-4 border-blue-500" width="200">
+    </figure>
+    </section>
+        <article id="html" class="html bg-white p-6 my-4">
             <h2 class="text-xl font-bold mb-2">The Little Taco Shop (HTML)</h2>
             <p>As I worked on my first project, I was able to learn how HTML is used to create a webpage. HTML entails the use of tags and elements and it is the basic language for creating a webpage. I was able to make a website for The Little Taco Shop.</p>
-            <a href="https://github.com/Junebiwott/The-Little-Taco-shop" class="text-blue-500">The Little Taco Shop</a>
+            <a href="index (2).html">The little taco shop</a>
+            <a href="https://github.com/Junebiwott/The-Little-Taco-shop" class="text-blue-500">The Little Taco Shop repository</a>
         </article>
-        <article class="html bg-white p-6 my-4">
+        <article id="Modified" class="html bg-white p-6 my-4">
             <h2 class="text-xl font-bold mb-2">Little Taco Shop Modified</h2>
             <p>While working on this project, I learned how CSS can be used to make a website more appealing to the eye. I combined both CSS and HTML and ended up with a beautiful Taco shop website.</p>
-            <a href="https://github.com/Junebiwott/mycssprojectjunebiwott" class="text-blue-500">The Little Taco Shop Modified</a>
+            <a href="index (3).html">Taco shop Modified</a>
+            <a href="https://github.com/Junebiwott/mycssprojectjunebiwott" class="text-blue-500">The Little Taco Shop Modified repository</a>
         </article>
-        <article class="html bg-white p-6 my-4">
+        <article id="Acme Rockets" class="html bg-white p-6 my-4">
             <h2 class="text-xl font-bold mb-2">Acme Rockets</h2>
             <p>Here, I learned about using Tailwind CSS. The setting up of Tailwind was the most tricky part. I was able to create a website for Acme Rockets which included incorporating icons and theme configuration.</p>
-            <a href="https://github.com/Junebiwott/mytailwindprojectjunebiwott" class="text-blue-500">Acme Rockets</a>
+            <a href="index (4).html">Acme rockets</a>
+            <a href="https://github.com/Junebiwott/mytailwindprojectjunebiwott" class="text-blue-500">Acme Rockets repository</a>
         </article>
         <section class="aboutme bg-white p-6 my-4">
-            <h2 class="text-2xl font-bold mb-2">About me</h2>
+            <h2 id= "aboutme" class="text-2xl font-bold mb-2">About me</h2>
             <details class="mb-4">
                 <summary class="text-lg font-bold mb-2">Who is June Biwott?</summary>
                 <p>June Biwott is a 17-year-old girl who is passionate about technology. I recently finished high school at The Alliance Girls' High School. I volunteer every Sunday in church in projecting. I have been able to learn a lot about computers through that. I decided to learn with DirectEd since the opportunity is very nice and I have always wanted to learn about coding but I always lack the chance due to lack of funds. This has therefore provided me the opportunity to pursue my passion.</p>
             </details>
             <div>
-                <h3 class="text-xl font-bold mb-2">My hobbies</h3>
+                <h3 id="myhobbies" class="text-xl font-bold mb-2">My hobbies</h3>
                 <p class="italic">My current hobbies are <span class="font-semibold">watching movies, reading novels, and cooking</span>.</p>
             </div>
         </section>
         <div class="container bg-white p-6 my-4">
-            <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
+            <h2 id="contactme" class="text-2xl font-bold mb-4">Contact Me</h2>
             <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
                 <label for="name" class="block mb-2">Name:</label>
-                <input type="text" id="name" name="name" required class="w-full border border-gray-300 rounded-md p-2 mb-4">
+                <input type="text" id="name" name="name" required class="w-full border border-gray-300 rounded-md p-2 mb-4" placeholder="Your name">
                 <label for="email" class="block mb-2">Email:</label>
-                <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded-md p-2 mb-4">
+                <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded-md p-2 mb-4" placeholder="Your email">
                 <label for="message" class="block mb-2">Message:</label>
-                <textarea id="message" name="message" required class="w-full border border-gray-300 rounded-md p-2 mb-4"></textarea>
+                <textarea id="message" name="message" required class="w-full border border-gray-300 rounded-md p-2 mb-4" placeholder="Your message"></textarea>
                 <input type="submit" value="Submit" class="bg-blue-500 text-white px-4 py-2 rounded-md">
             </form>
         </div>
         <footer class="bg-blue-500 text-white py-4">
-            <h3 class="text-xl font-bold">You can reach me through:</h3>
-            <ol class="list-decimal pl-4">
-                <li>Instagram: @junebiwot_t</li>
-                <li>X: @junebiwot_t</li>
-                <li>Whatsapp: +254768891995</li>
-                <li>Email: junebiwott098@gmail.com</li>
+            <h3 id ="mysocials" class="text-xl font-bold">You can reach me through:</h3>
+            <a href="mailto:junebiwott098@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> junebiwott098@gmail.com</a><br /><i class="fa fa-phone-square" aria-hidden="true"></i>
+        Phone: <a href="tel:+15555555555"> (+254) 768891995</a><br><i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        Instagram: <a href="https://www.instagram.com/junebiwot_t/">@junebiwot_t</a><br>
+                
             </ol>
         </footer>
     </body>
